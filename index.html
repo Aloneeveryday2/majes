@@ -40,6 +40,7 @@
             opacity: 0;
             transform: translateY(20px);
             transition: all 0.3s ease-in-out;
+        
         }
     </style>
 </head>
@@ -53,6 +54,38 @@
             <div class="space-x-8 hidden md:flex items-center">
                 <a href="#" class="text-gray-300 hover:text-white transition-all hover:scale-105 transform">Films</a>
                 <a href="#" class="text-gray-300 hover:text-white transition-all hover:scale-105 transform">Séances</a>
+                <div class="relative group">
+                    <a href="#" class="text-gray-300 hover:text-white transition-all hover:scale-105 transform flex items-center gap-2">
+                        Salles
+                        <i class="fas fa-chevron-down text-xs transition-transform group-hover:rotate-180"></i>
+                    </a>
+                    <div class="absolute top-full left-0 mt-2 w-48 bg-black/95 backdrop-blur-xl rounded-xl py-2 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0 border border-white/10">
+                        <a href="#" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 transition-all">
+                            Tingréla
+                            <span class="text-xs text-red-500 block">300 places</span>
+                        </a>
+                        <a href="#" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 transition-all">
+                            Toulepleu
+                            <span class="text-xs text-red-500 block">200 places</span>
+                        </a>
+                        <a href="#" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 transition-all">
+                            Brobo
+                            <span class="text-xs text-red-500 block">150 places</span>
+                        </a>
+                        <a href="#" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 transition-all">
+                            Bongouanou
+                            <span class="text-xs text-red-500 block">100 places</span>
+                        </a>
+                        <a href="#" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 transition-all">
+                            Tabou
+                            <span class="text-xs text-red-500 block">100 places</span>
+                        </a>
+                        <a href="#" class="block px-4 py-2 text-gray-300 hover:text-white hover:bg-white/10 transition-all">
+                            Tiapoum
+                            <span class="text-xs text-red-500 block">100 places</span>
+                        </a>
+                    </div>
+                </div>
                 <a href="#" class="text-gray-300 hover:text-white transition-all hover:scale-105 transform">Tarifs</a>
                 <a href="#" class="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-2.5 rounded-lg hover:from-red-700 hover:to-red-800 transition-all transform hover:scale-105 shadow-lg shadow-red-500/20">
                     Connexion
@@ -128,12 +161,225 @@
                     <i class="fas fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
                 </button>
             </div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+    <!-- Interstellar -->
+    <div class="bg-zinc-900/50 backdrop-blur-sm rounded-xl overflow-hidden group hover:scale-105 transition-all duration-300 slide-up border border-white/5">
+        <div class="relative movie-poster">
+            <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728" 
+                 alt="Interstellar" 
+                 class="w-full h-96 object-cover">
+            <div class="poster-overlay absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/50 p-6 flex flex-col justify-between backdrop-blur-sm">
+                <!-- Same overlay content as original -->
+                <div class="space-y-4">
+                    <div class="flex gap-3">
+                        <span class="text-sm bg-red-500/20 text-red-400 px-3 py-1 rounded-full">Aujourd'hui</span>
+                        <span class="text-sm bg-white/10 text-gray-300 px-3 py-1 rounded-full">Demain</span>
+                    </div>
+                    <div class="space-y-4">
+                        <!-- Same session times as original -->
+                        <div>
+                            <h5 class="text-white text-sm font-medium mb-2">Aujourd'hui</h5>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="bg-white/5 rounded-lg p-3 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all cursor-pointer group">
+                                    <span class="text-white font-medium block">20:15</span>
+                                    <span class="text-red-400 text-sm">Salle IMAX</span>
+                                    <span class="text-gray-400 text-xs block mt-1 group-hover:text-white transition-colors">Places disponibles</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-3 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all cursor-pointer group">
+                                    <span class="text-white font-medium block">22:30</span>
+                                    <span class="text-red-400 text-sm">Salle 1</span>
+                                    <span class="text-gray-400 text-xs block mt-1 group-hover:text-white transition-colors">Dernières places</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="text-white text-sm font-medium mb-2">Demain</h5>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="bg-white/5 rounded-lg p-3 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all cursor-pointer group">
+                                    <span class="text-white font-medium block">14:30</span>
+                                    <span class="text-red-400 text-sm">Salle IMAX</span>
+                                    <span class="text-gray-400 text-xs block mt-1 group-hover:text-white transition-colors">Places disponibles</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-3 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all cursor-pointer group">
+                                    <span class="text-white font-medium block">17:45</span>
+                                    <span class="text-red-400 text-sm">Salle 2</span>
+                                    <span class="text-gray-400 text-xs block mt-1 group-hover:text-white transition-colors">Places disponibles</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-yellow-500 flex items-center gap-1">
+                        <i class="fas fa-star"></i> 4.8
+                    </span>
+                    <span class="bg-black/60 px-2 py-1 rounded text-sm text-white">2h49</span>
+                </div>
+            </div>
+        </div>
+        <div class="p-6">
+            <div class="flex justify-between items-start mb-3">
+                <h4 class="text-white text-xl font-bold">Interstellar</h4>
+            </div>
+            <p class="text-gray-400 mb-6 text-sm">Science Fiction</p>
+            <button class="w-full bg-gradient-to-r from-red-600 to-red-700 text-white py-3 rounded-lg transition-all flex items-center justify-center gap-2 hover:from-red-700 hover:to-red-800">
+                <i class="fas fa-ticket"></i>
+                Réserver
+            </button>
+        </div>
+    </div>
+
+    <!-- Dune -->
+    <div class="bg-zinc-900/50 backdrop-blur-sm rounded-xl overflow-hidden group hover:scale-105 transition-all duration-300 slide-up border border-white/5">
+        <div class="relative movie-poster">
+            <img src="https://images.unsplash.com/photo-1547700055-b61cacebece9" 
+                 alt="Dune" 
+                 class="w-full h-96 object-cover">
+            <div class="poster-overlay absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/50 p-6 flex flex-col justify-between backdrop-blur-sm">
+                <div class="space-y-4">
+                    <div class="flex gap-3">
+                        <span class="text-sm bg-red-500/20 text-red-400 px-3 py-1 rounded-full">Aujourd'hui</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <h5 class="text-white text-sm font-medium mb-2">Aujourd'hui</h5>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="bg-white/5 rounded-lg p-3 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all cursor-pointer group">
+                                    <span class="text-white font-medium block">19:00</span>
+                                    <span class="text-red-400 text-sm">Salle IMAX</span>
+                                    <span class="text-gray-400 text-xs block mt-1 group-hover:text-white transition-colors">Places disponibles</span>
+                                </div>
+                                <div class="bg-white/5 rounded-lg p-3 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all cursor-pointer group">
+                                    <span class="text-white font-medium block">21:30</span>
+                                    <span class="text-red-400 text-sm">Salle 3</span>
+                                    <span class="text-gray-400 text-xs block mt-1 group-hover:text-white transition-colors">Dernières places</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-yellow-500 flex items-center gap-1">
+                        <i class="fas fa-star"></i> 4.9
+                    </span>
+                    <span class="bg-black/60 px-2 py-1 rounded text-sm text-white">2h35</span>
+                </div>
+            </div>
+        </div>
+        <div class="p-6">
+            <div class="flex justify-between items-start mb-3">
+                <h4 class="text-white text-xl font-bold">Dune</h4>
+            </div>
+            <p class="text-gray-400 mb-6 text-sm">Science Fiction, Aventure</p>
+            <button class="w-full bg-gradient-to-r from-red-600 to-red-700 text-white py-3 rounded-lg transition-all flex items-center justify-center gap-2 hover:from-red-700 hover:to-red-800">
+                <i class="fas fa-ticket"></i>
+                Réserver
+            </button>
+        </div>
+    </div>
+
+    <!-- The Batman -->
+    <div class="bg-zinc-900/50 backdrop-blur-sm rounded-xl overflow-hidden group hover:scale-105 transition-all duration-300 slide-up border border-white/5">
+        <div class="relative movie-poster">
+            <img src="https://images.unsplash.com/photo-1509347528160-9a9e33742cdb" 
+                 alt="The Batman" 
+                 class="w-full h-96 object-cover">
+            <div class="poster-overlay absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/50 p-6 flex flex-col justify-between backdrop-blur-sm">
+                <div class="space-y-4">
+                    <div class="flex gap-3">
+                        <span class="text-sm bg-red-500/20 text-red-400 px-3 py-1 rounded-full">Aujourd'hui</span>
+                        <span class="text-sm bg-white/10 text-gray-300 px-3 py-1 rounded-full">Demain</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <h5 class="text-white text-sm font-medium mb-2">Aujourd'hui</h5>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="bg-white/5 rounded-lg p-3 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all cursor-pointer group">
+                                    <span class="text-white font-medium block">18:30</span>
+                                    <span class="text-red-400 text-sm">Salle 2</span>
+                                    <span class="text-gray-400 text-xs block mt-1 group-hover:text-white transition-colors">Places disponibles</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-yellow-500 flex items-center gap-1">
+                        <i class="fas fa-star"></i> 4.7
+                    </span>
+                    <span class="bg-black/60 px-2 py-1 rounded text-sm text-white">2h56</span>
+                </div>
+            </div>
+        </div>
+        <div class="p-6">
+            <div class="flex justify-between items-start mb-3">
+                <h4 class="text-white text-xl font-bold">The Batman</h4>
+            </div>
+            <p class="text-gray-400 mb-6 text-sm">Action, Drame</p>
+            <button class="w-full bg-gradient-to-r from-red-600 to-red-700 text-white py-3 rounded-lg transition-all flex items-center justify-center gap-2 hover:from-red-700 hover:to-red-800">
+                <i class="fas fa-ticket"></i>
+                Réserver
+            </button>
+        </div>
+    </div>
+
+    <!-- Inception -->
+    <div class="bg-zinc-900/50 backdrop-blur-sm rounded-xl overflow-hidden group hover:scale-105 transition-all duration-300 slide-up border border-white/5">
+        <div class="relative movie-poster">
+            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1" 
+                 alt="Inception" 
+                 class="w-full h-96 object-cover">
+            <div class="poster-overlay absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/50 p-6 flex flex-col justify-between backdrop-blur-sm">
+                <div class="space-y-4">
+                    <div class="flex gap-3">
+                        <span class="text-sm bg-red-500/20 text-red-400 px-3 py-1 rounded-full">Aujourd'hui</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <h5 class="text-white text-sm font-medium mb-2">Aujourd'hui</h5>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="bg-white/5 rounded-lg p-3 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all cursor-pointer group">
+                                    <span class="text-white font-medium block">20:45</span>
+                                    <span class="text-red-400 text-sm">Salle IMAX</span>
+                                    <span class="text-gray-400 text-xs block mt-1 group-hover:text-white transition-colors">Places disponibles</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-yellow-500 flex items-center gap-1">
+                        <i class="fas fa-star"></i> 4.8
+                    </span>
+                    <span class="bg-black/60 px-2 py-1 rounded text-sm text-white">2h28</span>
+                </div>
+            </div>
+        </div>
+        <div class="p-6">
+            <div class="flex justify-between items-start mb-3">
+                <h4 class="text-white text-xl font-bold">Inception</h4>
+            </div>
+            <p class="text-gray-400 mb-6 text-sm">Science Fiction, Action</p>
+            <button class="w-full bg-gradient-to-r from-red-600 to-red-700 text-white py-3 rounded-lg transition-all flex items-center justify-center gap-2 hover:from-red-700 hover:to-red-800">
+                <i class="fas fa-ticket"></i>
+                Réserver
+            </button>
+        </div>
+    </div>
+</div>
+        </section>
+
+        <!-- Nouvelle section "Prochainement" -->
+        <section class="container mx-auto px-4 py-16 border-t border-white/5">
+            <h3 class="text-3xl font-bold text-white mb-12">Prochainement</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Oppenheimer -->
                 <div class="bg-zinc-900/50 backdrop-blur-sm rounded-xl overflow-hidden group hover:scale-105 transition-all duration-300 slide-up border border-white/5">
                     <div class="relative movie-poster">
-                        <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728" 
-                             alt="Movie" 
+                        <img src="https://images.unsplash.com/photo-1609743522653-52354461eb27" 
+                             alt="Oppenheimer" 
                              class="w-full h-96 object-cover">
+                        <!-- Same overlay structure with different times -->
                         <div class="poster-overlay absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/50 p-6 flex flex-col justify-between backdrop-blur-sm">
                             <div class="space-y-4">
                                 <div class="flex gap-3">
@@ -141,33 +387,61 @@
                                     <span class="text-sm bg-white/10 text-gray-300 px-3 py-1 rounded-full">Demain</span>
                                 </div>
                                 <div class="space-y-4">
-                                    <!-- Séances aujourd'hui -->
                                     <div>
                                         <h5 class="text-white text-sm font-medium mb-2">Aujourd'hui</h5>
                                         <div class="grid grid-cols-2 gap-3">
                                             <div class="bg-white/5 rounded-lg p-3 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all cursor-pointer group">
-                                                <span class="text-white font-medium block">20:15</span>
+                                                <span class="text-white font-medium block">19:30</span>
                                                 <span class="text-red-400 text-sm">Salle IMAX</span>
                                                 <span class="text-gray-400 text-xs block mt-1 group-hover:text-white transition-colors">Places disponibles</span>
                                             </div>
                                             <div class="bg-white/5 rounded-lg p-3 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all cursor-pointer group">
-                                                <span class="text-white font-medium block">22:30</span>
-                                                <span class="text-red-400 text-sm">Salle 1</span>
+                                                <span class="text-white font-medium block">21:45</span>
+                                                <span class="text-red-400 text-sm">Salle 3</span>
                                                 <span class="text-gray-400 text-xs block mt-1 group-hover:text-white transition-colors">Dernières places</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Séances demain -->
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-yellow-500 flex items-center gap-1">
+                                    <i class="fas fa-star"></i> 4.9
+                                </span>
+                                <span class="bg-black/60 px-2 py-1 rounded text-sm text-white">3h00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="text-white text-xl font-bold">Oppenheimer</h4>
+                        </div>
+                        <p class="text-gray-400 mb-6 text-sm">Drame historique</p>
+                        <button class="w-full bg-gradient-to-r from-red-600 to-red-700 text-white py-3 rounded-lg transition-all flex items-center justify-center gap-2 hover:from-red-700 hover:to-red-800">
+                            <i class="fas fa-ticket"></i>
+                            Réserver
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Napoleon -->
+                <div class="bg-zinc-900/50 backdrop-blur-sm rounded-xl overflow-hidden group hover:scale-105 transition-all duration-300 slide-up border border-white/5">
+                    <div class="relative movie-poster">
+                        <img src="https://images.unsplash.com/photo-1608889825205-eebdb9fc5806" 
+                             alt="Napoleon" 
+                             class="w-full h-96 object-cover">
+                        <!-- Similar overlay structure -->
+                        <div class="poster-overlay absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/50 p-6 flex flex-col justify-between backdrop-blur-sm">
+                            <div class="space-y-4">
+                                <div class="flex gap-3">
+                                    <span class="text-sm bg-red-500/20 text-red-400 px-3 py-1 rounded-full">Aujourd'hui</span>
+                                </div>
+                                <div class="space-y-4">
                                     <div>
-                                        <h5 class="text-white text-sm font-medium mb-2">Demain</h5>
+                                        <h5 class="text-white text-sm font-medium mb-2">Aujourd'hui</h5>
                                         <div class="grid grid-cols-2 gap-3">
                                             <div class="bg-white/5 rounded-lg p-3 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all cursor-pointer group">
-                                                <span class="text-white font-medium block">14:30</span>
-                                                <span class="text-red-400 text-sm">Salle IMAX</span>
-                                                <span class="text-gray-400 text-xs block mt-1 group-hover:text-white transition-colors">Places disponibles</span>
-                                            </div>
-                                            <div class="bg-white/5 rounded-lg p-3 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all cursor-pointer group">
-                                                <span class="text-white font-medium block">17:45</span>
+                                                <span class="text-white font-medium block">18:15</span>
                                                 <span class="text-red-400 text-sm">Salle 2</span>
                                                 <span class="text-gray-400 text-xs block mt-1 group-hover:text-white transition-colors">Places disponibles</span>
                                             </div>
@@ -177,32 +451,74 @@
                             </div>
                             <div class="flex justify-between items-center">
                                 <span class="text-yellow-500 flex items-center gap-1">
-                                    <i class="fas fa-star"></i> 4.8
+                                    <i class="fas fa-star"></i> 4.7
                                 </span>
-                                <span class="bg-black/60 px-2 py-1 rounded text-sm text-white">2h49</span>
+                                <span class="bg-black/60 px-2 py-1 rounded text-sm text-white">2h38</span>
                             </div>
                         </div>
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-3">
-                            <h4 class="text-white text-xl font-bold">Interstellar</h4>
+                            <h4 class="text-white text-xl font-bold">Napoleon</h4>
                         </div>
-                        <p class="text-gray-400 mb-6 text-sm">Science Fiction</p>
+                        <p class="text-gray-400 mb-6 text-sm">Drame historique</p>
                         <button class="w-full bg-gradient-to-r from-red-600 to-red-700 text-white py-3 rounded-lg transition-all flex items-center justify-center gap-2 hover:from-red-700 hover:to-red-800">
                             <i class="fas fa-ticket"></i>
                             Réserver
                         </button>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Nouvelle section "Prochainement" -->
-        <section class="container mx-auto px-4 py-16 border-t border-white/5">
-            <h3 class="text-3xl font-bold text-white mb-12">Prochainement</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                <!-- Répéter la carte de film avec différents films -->
-                <!-- ... autres cartes de films ... -->
+                <!-- Wonka -->
+                <div class="bg-zinc-900/50 backdrop-blur-sm rounded-xl overflow-hidden group hover:scale-105 transition-all duration-300 slide-up border border-white/5">
+                    <div class="relative movie-poster">
+                        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60" 
+                             alt="Wonka" 
+                             class="w-full h-96 object-cover">
+                        <!-- Similar overlay structure -->
+                        <div class="poster-overlay absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/50 p-6 flex flex-col justify-between backdrop-blur-sm">
+                            <div class="space-y-4">
+                                <div class="flex gap-3">
+                                    <span class="text-sm bg-red-500/20 text-red-400 px-3 py-1 rounded-full">Aujourd'hui</span>
+                                    <span class="text-sm bg-white/10 text-gray-300 px-3 py-1 rounded-full">Demain</span>
+                                </div>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h5 class="text-white text-sm font-medium mb-2">Aujourd'hui</h5>
+                                        <div class="grid grid-cols-2 gap-3">
+                                            <div class="bg-white/5 rounded-lg p-3 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all cursor-pointer group">
+                                                <span class="text-white font-medium block">15:45</span>
+                                                <span class="text-red-400 text-sm">Salle 1</span>
+                                                <span class="text-gray-400 text-xs block mt-1 group-hover:text-white transition-colors">Places disponibles</span>
+                                            </div>
+                                            <div class="bg-white/5 rounded-lg p-3 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-all cursor-pointer group">
+                                                <span class="text-white font-medium block">20:00</span>
+                                                <span class="text-red-400 text-sm">Salle IMAX</span>
+                                                <span class="text-gray-400 text-xs block mt-1 group-hover:text-white transition-colors">Places disponibles</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-yellow-500 flex items-center gap-1">
+                                    <i class="fas fa-star"></i> 4.6
+                                </span>
+                                <span class="bg-black/60 px-2 py-1 rounded text-sm text-white">1h56</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="text-white text-xl font-bold">Wonka</h4>
+                        </div>
+                        <p class="text-gray-400 mb-6 text-sm">Fantaisie, Comédie</p>
+                        <button class="w-full bg-gradient-to-r from-red-600 to-red-700 text-white py-3 rounded-lg transition-all flex items-center justify-center gap-2 hover:from-red-700 hover:to-red-800">
+                            <i class="fas fa-ticket"></i>
+                            Réserver
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -217,6 +533,41 @@
                 <div class="flex flex-col items-center gap-8 mt-12">
                     <a href="#" class="text-2xl text-white hover:text-red-500 transition-colors">Films</a>
                     <a href="#" class="text-2xl text-white hover:text-red-500 transition-colors">Séances</a>
+                    
+                    <!-- Add dropdown for Salles in mobile -->
+<div class="relative group">
+    <button class="text-2xl text-white hover:text-red-500 transition-colors flex items-center gap-2">
+        Salles
+        <i class="fas fa-chevron-down text-xs transition-transform group-hover:rotate-180"></i>
+    </button>
+    <div class="mt-4 space-y-4 bg-black/80 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+        <a href="#" class="block text-lg text-gray-300 hover:text-white transition-colors hover:bg-white/10 p-3 rounded-lg">
+            Tingréla
+            <span class="text-sm text-red-500 block">300 places</span>
+        </a>
+        <a href="#" class="block text-lg text-gray-300 hover:text-white transition-colors hover:bg-white/10 p-3 rounded-lg">
+            Toulepleu
+            <span class="text-sm text-red-500 block">200 places</span>
+        </a>
+        <a href="#" class="block text-lg text-gray-300 hover:text-white transition-colors hover:bg-white/10 p-3 rounded-lg">
+            Brobo
+            <span class="text-sm text-red-500 block">150 places</span>
+        </a>
+        <a href="#" class="block text-lg text-gray-300 hover:text-white transition-colors hover:bg-white/10 p-3 rounded-lg">
+            Bongouanou
+            <span class="text-sm text-red-500 block">100 places</span>
+        </a>
+        <a href="#" class="block text-lg text-gray-300 hover:text-white transition-colors hover:bg-white/10 p-3 rounded-lg">
+            Tabou
+            <span class="text-sm text-red-500 block">100 places</span>
+        </a>
+        <a href="#" class="block text-lg text-gray-300 hover:text-white transition-colors hover:bg-white/10 p-3 rounded-lg">
+            Tiapoum
+            <span class="text-sm text-red-500 block">100 places</span>
+        </a>
+    </div>
+</div>
+
                     <a href="#" class="text-2xl text-white hover:text-red-500 transition-colors">Tarifs</a>
                     <a href="#" class="bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-3 rounded-xl">
                         Connexion
